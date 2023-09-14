@@ -1,9 +1,9 @@
 import cv2
 import datetime
 import os
-from notifications import send_sms_via_twilio
+import sys
 import threading
-import keyboard
+from notifications import send_sms_via_twilio
 
 def start_motion_detection():
     def notify_user():
@@ -17,7 +17,12 @@ def start_motion_detection():
     ret, frame1 = cap.read()
     ret, frame2 = cap.read()
 
-    fourcc = cv2.VideoWriter_fourcc(*'XVID')
+    # Select codec based on OS
+    if sys.platform == "darwin":  # macOS
+        fourcc = cv2.VideoWriter_fourcc(*'MJPG')
+    else:  # Windows and other platforms
+        fourcc = cv2.VideoWriter_fourcc(*'XVID')
+
     video_writer = None
     motion_frames_count = 0
 
@@ -68,7 +73,6 @@ def start_motion_detection():
         frame1 = frame2
         ret, frame2 = cap.read()
 
-        
         if cv2.waitKey(40) == 27:  # Esc key to exit
             break
 
@@ -77,3 +81,5 @@ def start_motion_detection():
 
     cv2.destroyAllWindows()
     cap.release()
+
+# If you have other parts of your code, add them below this.
