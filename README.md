@@ -16,15 +16,25 @@ pi-curity is a homegrown home security system designed with utmost regard for pr
 
 # Technologies
 
-Hardware: USB Camera, Raspberry Pi 4 B
+**Hardware:**
 
-Backend: Flask (Python)
+USB Camera, Raspberry Pi 4 B
 
-Frontend: HTML, CSS, JavaScript
+**Backend:**
 
-Motion Detection: OpenCV
+Flask (Python)
 
-Notification System: Twilio for SMS notifications
+**Frontend:**
+
+HTML, CSS, JavaScript
+
+**Motion Detection:** 
+
+OpenCV
+
+**Notification System:** 
+
+Twilio for SMS notifications
 
 # Features
 
