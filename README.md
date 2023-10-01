@@ -51,7 +51,6 @@ Web Interface: Arm or disarm the security system, watch live camera feeds, or vi
 Upon setting up the hardware components, simply navigate to the pi-curity web app using any device with an internet connection. The intuitive interface provides easy access to all functionalities, allowing users to manage their home security with ease.
 Contributing
 
-pi-curity is a free and open-source initiative. The community is encouraged to contribute, further enhancing its features, refining the AI, or adding new functionalities. Before making a pull request, it would be beneficial to check any contribution guidelines (if available).
 
 # License
 
