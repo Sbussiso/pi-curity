@@ -38,13 +38,21 @@ Twilio for SMS notifications
 
 # Features
 
-Local Data Storage: Ensures maximum privacy by keeping all recorded data on your premises.
+**Local Data Storage:** 
 
-Motion Detection & Recording: Utilizes AI via OpenCV to detect any motion and commences recording once detected.
+Ensures maximum privacy by keeping all recorded data on your premises.
 
-Instant Notifications: Stay updated about any activity. When motion is detected, receive prompt SMS notifications through Twilio.
+**Motion Detection & Recording:** 
 
-Web Interface: Arm or disarm the security system, watch live camera feeds, or view recorded videos at your convenience, all through a user-friendly web application.
+Utilizes AI via OpenCV to detect any motion and commences recording once detected.
+
+**Instant Notifications:** 
+
+Stay updated about any activity. When motion is detected, receive prompt SMS notifications through Twilio.
+
+**Web Interface:** 
+
+Arm or disarm the security system, watch live camera feeds, or view recorded videos at your convenience, all through a user-friendly web application.
 
 # Usage
 
